@@ -35,3 +35,10 @@
 2025-05-19 15:26:16,538 - INFO - User logged in successfully in data driven
 2025-05-19 15:26:16,788 - INFO - User logged in successfully in data driven
 2025-05-19 15:26:16,993 - INFO - User logged in successfully in data driven
+2025-05-19 16:29:18,273 - INFO - input blank username and check the error message is displayed.
+2025-05-19 16:29:19,683 - INFO - Enter invalid username check the error message is displayed.
+2025-05-19 16:29:21,571 - INFO - Enter locked out username and check the error message is displayed.
+2025-05-19 16:29:23,024 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-19 16:29:24,462 - INFO - Enter invalid username and password and check the error message is displayed.
+2025-05-19 16:29:25,899 - INFO - User logged in successfully
+2025-05-19 16:29:34,350 - INFO - Log out is successfully
