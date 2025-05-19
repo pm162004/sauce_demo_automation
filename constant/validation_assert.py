@@ -1,0 +1,7 @@
+ENTER_USERNAME = "Epic sadface: Username is required"
+ENTER_PASSWORD = "Epic sadface: Password is required"
+products = "Products"
+THANK_YOU = "Thank you for your order!"
+ENTER_FIRST_NAME = "Error: First Name is required"
+ENTER_LAST_NAME = "Error: Last Name is required"
+ENTER_POSTAL_CODE = "Error: Postal Code is required"

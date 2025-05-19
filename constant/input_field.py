@@ -1,0 +1,6 @@
+INVALID_USERNAME = "error_user1"
+INVALID_PASSWORD = "sauce"
+LOCKED_OUT_USER = "locked_out_user"
+FIRST_NAME ="Test"
+LAST_NAME = "User"
+POSTAL_CODE = "123456"

@@ -1,0 +1,37 @@
+2025-05-19 15:00:10,356 - INFO - User logged in successfully
+2025-05-19 15:00:12,953 - INFO - Log out is successfully
+2025-05-19 15:06:12,374 - INFO - User logged in successfully
+2025-05-19 15:14:36,905 - INFO - User logged in successfully
+2025-05-19 15:14:39,592 - INFO - Log out is successfully
+2025-05-19 15:18:27,208 - INFO - input blank username and check the error message is displayed.
+2025-05-19 15:18:28,843 - INFO - Enter invalid username check the error message is displayed.
+2025-05-19 15:18:30,555 - INFO - Enter locked out username and check the error message is displayed.
+2025-05-19 15:18:31,934 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-19 15:18:33,365 - INFO - Enter invalid username and password and check the error message is displayed.
+2025-05-19 15:18:34,795 - INFO - User logged in successfully
+2025-05-19 15:20:37,892 - INFO - User logged in successfully
+2025-05-19 15:20:54,301 - INFO - User logged in successfully
+2025-05-19 15:21:01,668 - INFO - User product browsing in successfully
+2025-05-19 15:21:03,279 - INFO - User add the cart successfully
+2025-05-19 15:21:19,131 - INFO - User logged in successfully
+2025-05-19 15:21:24,510 - INFO - User product browsing in successfully
+2025-05-19 15:21:25,892 - INFO - User add the cart successfully
+2025-05-19 15:21:27,326 - INFO - User view the cart successfully
+2025-05-19 15:21:29,052 - INFO - User update the cart successfully
+2025-05-19 15:21:36,772 - INFO - User logged in successfully
+2025-05-19 15:21:36,910 - INFO - User product browsing in successfully
+2025-05-19 15:21:47,300 - INFO - User logged in successfully
+2025-05-19 15:21:49,755 - INFO - Log out is successfully
+2025-05-19 15:21:58,931 - INFO - input blank username and check the error message is displayed.
+2025-05-19 15:22:05,204 - INFO - User logged in successfully
+2025-05-19 15:22:14,854 - INFO - User product browsing in successfully
+2025-05-19 15:22:16,233 - INFO - User add the cart successfully
+2025-05-19 15:22:17,563 - INFO - User view the cart successfully
+2025-05-19 15:22:23,801 - INFO - User check out the cart successfully
+2025-05-19 15:22:44,533 - INFO - User logged in successfully
+2025-05-19 15:22:45,975 - INFO - User product browsing in successfully
+2025-05-19 15:22:47,565 - INFO - User add the cart successfully
+2025-05-19 15:22:48,943 - INFO - User view the cart successfully
+2025-05-19 15:26:16,538 - INFO - User logged in successfully in data driven
+2025-05-19 15:26:16,788 - INFO - User logged in successfully in data driven
+2025-05-19 15:26:16,993 - INFO - User logged in successfully in data driven
