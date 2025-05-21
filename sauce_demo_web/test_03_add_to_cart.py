@@ -7,7 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 from sauce_demo_setup.config import config
-from constant import validation_assert, error,input_field
+from constant import validation_assert, error, input_field
+
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')  # Optional for headless mode
 driver = webdriver.Chrome()
@@ -22,34 +23,38 @@ user_name = config.USER_NAME
 password = config.PASSWORD
 from log_config import setup_logger
 
-
-
-
 logger = setup_logger()
-
 
 
 # Elements
 def username_input():
     return wait.until(EC.presence_of_element_located((By.ID, "user-name")))
 
+
 def password_input():
     return wait.until(EC.presence_of_element_located((By.ID, "password")))
+
 
 def login_btn():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='login-button']")))
 
+
 def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
+
 def check_product_selection():
-    return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+    return wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+
 
 def check_product_details():
     return wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='inventory_details_name large_size']")))
 
+
 def check_add_to_cart():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@id='add-to-cart']")))
+
 
 def refresh_page():
     wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
@@ -57,16 +62,23 @@ def refresh_page():
     time.sleep(1)
     return driver.refresh()
 
+
 def check_the_cart():
     cart_icon = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@data-test='shopping-cart-link']")))
     return cart_icon
 
+
 def check_cart_item():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "cart_item")))
 
+
+def quit_browser():
+    time.sleep(1)
+    return driver.quit()
+
+
 class TestSauceLogin:
     def test_valid_login_flow(self):
-
         username_input().send_keys(user_name)
         password_input().send_keys(password)
         login_btn().click()
@@ -90,8 +102,4 @@ class TestSauceLogin:
         assert "cart" in driver.current_url
         assert check_cart_item().is_displayed()
         logger.info("User view the cart successfully")
-
-
-
-
-
+        quit_browser()

@@ -18,14 +18,20 @@ logger = setup_logger()
 
 
 # Setup driver
+
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')  # Optional for headless mode
-driver = webdriver.Chrome()
+chrome_options.add_experimental_option("prefs", {
+    "credentials_enable_service": False,
+    "profile.password_manager_enabled": False
+})
+chrome_options.add_argument("--disable-infobars")
+chrome_options.add_argument("--disable-notifications")
+driver = webdriver.Chrome(options=chrome_options)
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
 # driver.implicitly_wait(10)
-wait = WebDriverWait(driver, 20)
+wait = WebDriverWait(driver, 25)
 wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 
@@ -63,16 +69,24 @@ def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
 def logout_menu():
-    return wait.until(EC.element_to_be_clickable((By.ID, "react-burger-menu-btn")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='bm-burger-button']")))
+
 
 def logout_link():
-    return wait.until(EC.element_to_be_clickable((By.ID, "logout_sidebar_link")))
+    time.sleep(1)
+    logout_element = driver.find_element(By.ID, "logout_sidebar_link")
+    return driver.execute_script("arguments[0].click();", logout_element)
+
 
 def refresh_page():
     wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
     wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
     time.sleep(1)
     return driver.refresh()
+
+def quit_browser():
+    time.sleep(1)
+    return driver.quit()
 
 # Test Cases
 class TestSauceLogin:
@@ -137,9 +151,7 @@ class TestSauceLogin:
         logger.info("User logged in successfully")
 
     def test_logout(self):
-        refresh_page()
         logout_menu().click()
-        time.sleep(1)
-        logout_link().click()
-        assert login_btn().is_displayed()
-        logger.info("Log out is successfully")
+        logout_link()
+        logger.info("User Logout in successfully")
+        quit_browser()

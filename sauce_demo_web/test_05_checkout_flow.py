@@ -7,15 +7,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 from sauce_demo_setup.config import config
-from constant import validation_assert, error,input_field
+from constant import validation_assert, error, input_field
 from log_config import setup_logger
 
-
-
-
 logger = setup_logger()
-
-
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')  # Optional for headless mode
@@ -30,12 +25,16 @@ wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 
 user_name = config.USER_NAME
 password = config.PASSWORD
+
+
 # Elements
 def username_input():
     return wait.until(EC.presence_of_element_located((By.ID, "user-name")))
 
+
 def password_input():
     return wait.until(EC.presence_of_element_located((By.ID, "password")))
+
 
 def login_btn():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='login-button']")))
@@ -44,20 +43,26 @@ def login_btn():
 def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
+
 def check_product_selection():
-    return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+    return wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+
 
 def check_product_details():
     return wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='inventory_details_name large_size']")))
 
+
 def check_add_to_cart():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@id='add-to-cart']")))
+
 
 def refresh_page():
     wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
     wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
     time.sleep(1)
     return driver.refresh()
+
 
 def check_the_cart():
     cart_icon = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@data-test='shopping-cart-link']")))
@@ -67,44 +72,67 @@ def check_the_cart():
 def check_cart_item():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "cart_item")))
 
+
 def update_cart():
     cart_items = driver.find_elements(By.CLASS_NAME, "cart_item")
     return cart_items
 
+
 def remove_cart_item():
     wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "cart_button"))).click()
 
+
 def checkout_cart_item():
     wait.until(EC.element_to_be_clickable((By.ID, "checkout"))).click()
+
+
 def first_name_error():
-    return wait.until(EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: First Name is required']")))
+    return wait.until(
+        EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: First Name is required']")))
+
 
 def last_name_error():
-    return wait.until(EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: Last Name is required']")))
+    return wait.until(
+        EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: Last Name is required']")))
+
 
 def postal_code_error():
-    return wait.until(EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: Postal Code is required']")))
+    return wait.until(
+        EC.visibility_of_element_located((By.XPATH, "//h3[normalize-space()='Error: Postal Code is required']")))
+
 
 def first_name_input():
     return wait.until(EC.presence_of_element_located((By.ID, "first-name")))
 
+
 def last_name_input():
     return wait.until(EC.presence_of_element_located((By.ID, "last-name")))
+
 
 def postal_code_input():
     return wait.until(EC.presence_of_element_located((By.ID, "postal-code")))
 
+
 def continue_btn():
     return wait.until(EC.element_to_be_clickable((By.ID, "continue")))
+
 
 def summary_info():
     return wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "summary_info")))
 
+
 def finish_btn():
     return wait.until(EC.element_to_be_clickable((By.ID, "finish")))
 
+
 def success_message():
     return wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "complete-header")))
+
+
+def quit_browser():
+    time.sleep(1)
+    return driver.quit()
+
 
 class Test1:
     def test_valid_login_flow(self):
@@ -137,7 +165,6 @@ class Test1:
         refresh_page()
         checkout_cart_item()
 
-
     def test_checkout_blank_first_name(self):
         # refresh_page()
         continue_btn().click()
@@ -169,12 +196,6 @@ class Test1:
         assert summary.is_displayed()
         finish_btn().click()
         success_msg = success_message()
-        assert  success_msg.text == validation_assert.THANK_YOU
+        assert success_msg.text == validation_assert.THANK_YOU
         logger.info("User check out the cart successfully")
-
-
-
-
-
-
-
+        quit_browser()

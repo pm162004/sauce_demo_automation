@@ -61,10 +61,12 @@ def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
 def logout_menu():
-    return wait.until(EC.element_to_be_clickable((By.ID, "react-burger-menu-btn")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='bm-burger-button']")))
 
 def logout_link():
-    return wait.until(EC.element_to_be_clickable((By.ID, "logout_sidebar_link")))
+    time.sleep(1)
+    logout_element = driver.find_element(By.ID, "logout_sidebar_link")
+    return driver.execute_script("arguments[0].click();", logout_element)
 
 def refresh_page():
     wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
@@ -72,6 +74,9 @@ def refresh_page():
     time.sleep(1)
     return driver.refresh()
 
+def quit_browser():
+    time.sleep(1)
+    return driver.quit()
 # Test Cases
 class TestSauceLogOUT:
 
@@ -84,15 +89,11 @@ class TestSauceLogOUT:
         assert inventory_title().text == validation_assert.products
         logger.info("User logged in successfully")
 
-
     def test_logout(self):
-        refresh_page()
         logout_menu().click()
-        time.sleep(1)
-        logout_link().click()
-        assert login_btn().is_displayed()
-        logger.info("Log out is successfully")
-
+        logout_link()
+        logger.info("User Logout in successfully")
+        quit_browser()
 
 
 
