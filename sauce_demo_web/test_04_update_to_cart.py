@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver import ActionChains
 from sauce_demo_setup.config import config
 from constant import validation_assert, error,input_field
@@ -45,9 +47,10 @@ def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
 def check_product_selection():
-    time.sleep(1)
-    select_product = driver.find_element(By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")
-    return driver.execute_script("arguments[0].click();", select_product)
+    element = wait.until(
+        EC.element_to_be_clickable((By.XPATH, "//a[@id='item_4_title_link' and @data-test='item-4-title-link']")))
+    return element
+
 
 
 def check_product_details():
@@ -93,7 +96,9 @@ class Test:
 
     def test_product_browsing_and_view_details(self):
         refresh_page()
-        check_product_selection()
+        element = check_product_selection()
+        actions = ActionChains(driver)
+        actions.move_to_element(element).click().perform()
         assert check_product_details().is_displayed()
         logger.info("User product browsing in successfully")
 
