@@ -156,7 +156,6 @@ class Test1:
     def test_view_cart(self):
         refresh_page()
         check_the_cart().click()
-        # Optional: Verify you are now on the cart page
         assert "cart" in driver.current_url
         assert check_cart_item().is_displayed()
         logger.info("User view the cart successfully")

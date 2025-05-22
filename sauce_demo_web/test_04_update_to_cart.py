@@ -45,13 +45,17 @@ def inventory_title():
     return wait.until(EC.presence_of_element_located((By.CLASS_NAME, "title")))
 
 def check_product_selection():
-    return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+    return wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+
 
 def check_product_details():
     return wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='inventory_details_name large_size']")))
 
+
 def check_add_to_cart():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@id='add-to-cart']")))
+
 
 def refresh_page():
     wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
