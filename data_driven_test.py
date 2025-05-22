@@ -42,3 +42,4 @@ def test_login_multiple_users(username,password):
     driver.find_element(By.ID, "login-button").click()
     assert "Products" == validation_assert.products
     logger.info("User logged in successfully in data driven")
+
