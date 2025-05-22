@@ -138,6 +138,7 @@ class TestSauceLogin:
         password_input().send_keys(input_field.INVALID_PASSWORD)
         login_btn().click()
         assert check_invalid_creds().text == error.INVALID_CREDS_ERROR_MESSAGE
+
         driver.save_screenshot(f"/home/web-h-028/PycharmProjects/sauce_demo_automation/screenshorts/invalid_username_password.png")
         logger.info("Enter invalid username and password and check the error message is displayed.")
         driver.refresh()

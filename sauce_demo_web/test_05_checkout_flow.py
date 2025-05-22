@@ -45,8 +45,9 @@ def inventory_title():
 
 
 def check_product_selection():
-    return wait.until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")))
+    time.sleep(1)
+    select_product = driver.find_element(By.CSS_SELECTOR, "a[id='item_4_title_link'] div[class='inventory_item_name ']")
+    return driver.execute_script("arguments[0].click();", select_product)
 
 
 def check_product_details():
@@ -144,7 +145,7 @@ class Test1:
 
     def test_product_browsing_and_view_details(self):
         refresh_page()
-        check_product_selection().click()
+        check_product_selection()
         assert check_product_details().is_displayed()
         logger.info("User product browsing in successfully")
 
