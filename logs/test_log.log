@@ -853,3 +853,169 @@
 2025-05-22 15:25:27,932 - INFO - User check out the cart successfully
 2025-05-22 15:25:33,525 - INFO - User logged in successfully
 2025-05-22 15:25:34,635 - INFO - User Logout in successfully
+2025-05-25 10:11:23,018 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:11:27,597 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:11:29,234 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:11:32,296 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:11:37,020 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:11:45,200 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:11:51,927 - INFO - User logged in successfully
+2025-05-25 10:11:53,827 - INFO - User Logout in successfully
+2025-05-25 10:15:36,284 - INFO - User logged in successfully
+2025-05-25 10:15:39,324 - INFO - User Logout in successfully
+2025-05-25 10:23:11,852 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:23:16,460 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:23:19,553 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:23:25,550 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:23:29,574 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:23:34,822 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:23:41,551 - INFO - User logged in successfully
+2025-05-25 10:23:44,005 - INFO - User Logout in successfully
+2025-05-25 10:32:06,925 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:32:09,500 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:32:12,318 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:32:14,771 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:32:18,668 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:32:21,798 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:32:25,533 - INFO - User logged in successfully
+2025-05-25 10:32:28,234 - INFO - User Logout in successfully
+2025-05-25 10:38:45,474 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:38:58,545 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:39:00,841 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:39:04,811 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:39:09,809 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:39:15,060 - INFO - User logged in successfully
+2025-05-25 10:39:18,494 - INFO - User Logout in successfully
+2025-05-25 10:42:49,623 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:42:52,538 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:42:57,775 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:43:00,421 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:43:02,706 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:43:06,368 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:43:16,965 - INFO - User logged in successfully
+2025-05-25 10:43:19,609 - INFO - User Logout in successfully
+2025-05-25 10:45:20,504 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:45:23,341 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:45:27,898 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:45:31,278 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:45:34,187 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:45:37,855 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:45:43,304 - INFO - User logged in successfully
+2025-05-25 10:45:45,924 - INFO - User Logout in successfully
+2025-05-25 10:46:44,895 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 10:46:47,520 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 10:46:50,048 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 10:46:52,904 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 10:46:56,411 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 10:46:59,438 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 10:47:02,190 - INFO - User logged in successfully
+2025-05-25 10:47:04,118 - INFO - User Logout in successfully
+2025-05-25 10:57:23,345 - INFO - User logged in successfully
+2025-05-25 10:57:34,570 - INFO - User product browsing in successfully
+2025-05-25 10:58:33,813 - INFO - User logged in successfully
+2025-05-25 10:59:01,858 - INFO - User add the cart successfully
+2025-05-25 10:59:04,215 - INFO - User view the cart successfully
+2025-05-25 11:00:58,688 - INFO - User logged in successfully
+2025-05-25 11:01:07,147 - INFO - User product browsing in successfully
+2025-05-25 11:01:11,122 - INFO - User add the cart successfully
+2025-05-25 11:01:12,807 - INFO - User view the cart successfully
+2025-05-25 11:02:17,633 - INFO - User logged in successfully
+2025-05-25 11:02:36,540 - INFO - User product browsing in successfully
+2025-05-25 11:02:38,838 - INFO - User add the cart successfully
+2025-05-25 11:02:41,181 - INFO - User view the cart successfully
+2025-05-25 11:02:51,819 - INFO - User check out the cart successfully
+2025-05-25 11:03:57,834 - INFO - User logged in successfully
+2025-05-25 11:04:00,159 - INFO - User product browsing in successfully
+2025-05-25 11:04:37,664 - INFO - User logged in successfully
+2025-05-25 11:06:10,979 - INFO - User logged in successfully
+2025-05-25 11:06:27,921 - INFO - User product browsing in successfully
+2025-05-25 11:07:28,747 - INFO - User logged in successfully
+2025-05-25 11:54:30,768 - INFO - User logged in successfully
+2025-05-25 11:54:53,363 - ERROR - Product browsing failed: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF64282CF45+75717]
+	GetHandleVerifier [0x00007FF64282CFA0+75808]
+	(No symbol) [0x00007FF6425F8F9A]
+	(No symbol) [0x00007FF64264F4C6]
+	(No symbol) [0x00007FF64264F77C]
+	(No symbol) [0x00007FF6426A2577]
+	(No symbol) [0x00007FF6426773BF]
+	(No symbol) [0x00007FF64269F39C]
+	(No symbol) [0x00007FF642677153]
+	(No symbol) [0x00007FF642640421]
+	(No symbol) [0x00007FF6426411B3]
+	GetHandleVerifier [0x00007FF642B2D71D+3223453]
+	GetHandleVerifier [0x00007FF642B27CC2+3200322]
+	GetHandleVerifier [0x00007FF642B45AF3+3322739]
+	GetHandleVerifier [0x00007FF642846A1A+180890]
+	GetHandleVerifier [0x00007FF64284E11F+211359]
+	GetHandleVerifier [0x00007FF642835294+109332]
+	GetHandleVerifier [0x00007FF642835442+109762]
+	GetHandleVerifier [0x00007FF64281BA59+4825]
+	BaseThreadInitThunk [0x00007FFFE052259D+29]
+	RtlUserThreadStart [0x00007FFFE18AAF58+40]
+
+2025-05-25 11:58:58,280 - INFO - User logged in successfully
+2025-05-25 11:59:29,290 - INFO - User logged in successfully
+2025-05-25 12:02:14,506 - INFO - User logged in successfully
+2025-05-25 12:03:27,825 - INFO - User logged in successfully
+2025-05-25 12:04:15,704 - INFO - User logged in successfully
+2025-05-25 12:04:18,527 - INFO - User product browsing in successfully
+2025-05-25 12:04:20,595 - INFO - User add the cart successfully
+2025-05-25 12:04:22,679 - INFO - User view the cart successfully
+2025-05-25 12:05:03,222 - INFO - User logged in successfully
+2025-05-25 12:05:05,813 - INFO - User product browsing in successfully
+2025-05-25 12:05:07,321 - INFO - User add the cart successfully
+2025-05-25 12:05:08,802 - INFO - User view the cart successfully
+2025-05-25 12:05:49,899 - INFO - User logged in successfully
+2025-05-25 12:06:21,420 - INFO - User logged in successfully
+2025-05-25 12:06:24,248 - INFO - User product browsing in successfully
+2025-05-25 12:06:26,014 - INFO - User add the cart successfully
+2025-05-25 12:06:27,626 - INFO - User view the cart successfully
+2025-05-25 12:09:32,484 - INFO - User logged in successfully
+2025-05-25 12:09:36,753 - INFO - User product browsing in successfully
+2025-05-25 12:09:40,068 - INFO - User add the cart successfully
+2025-05-25 12:09:42,412 - INFO - User view the cart successfully
+2025-05-25 12:09:51,459 - INFO - User check out the cart successfully
+2025-05-25 12:31:22,047 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 12:31:24,644 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 12:31:26,913 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 12:31:29,287 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 12:31:32,375 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 12:31:35,570 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 12:31:38,020 - INFO - User logged in successfully
+2025-05-25 12:31:39,441 - INFO - User Logout in successfully
+2025-05-25 12:31:59,309 - INFO - User logged in successfully
+2025-05-25 12:32:02,379 - INFO - User product browsing in successfully
+2025-05-25 12:32:14,331 - INFO - User logged in successfully
+2025-05-25 12:32:17,868 - INFO - User product browsing in successfully
+2025-05-25 12:32:19,834 - INFO - User add the cart successfully
+2025-05-25 12:32:22,568 - INFO - User view the cart successfully
+2025-05-25 12:32:42,444 - INFO - User logged in successfully
+2025-05-25 12:32:46,052 - INFO - User product browsing in successfully
+2025-05-25 12:32:48,828 - INFO - User add the cart successfully
+2025-05-25 12:32:52,215 - INFO - User view the cart successfully
+2025-05-25 12:32:54,377 - INFO - User update the cart successfully
+2025-05-25 12:33:15,627 - INFO - User logged in successfully
+2025-05-25 12:33:21,932 - INFO - User product browsing in successfully
+2025-05-25 12:33:25,863 - INFO - User add the cart successfully
+2025-05-25 12:33:30,185 - INFO - User view the cart successfully
+2025-05-25 12:33:44,581 - INFO - User check out the cart successfully
+2025-05-25 12:34:04,627 - INFO - User logged in successfully
+2025-05-25 12:34:05,840 - INFO - User Logout in successfully
+2025-05-25 12:39:30,528 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 12:39:36,710 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 12:39:38,944 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 12:39:41,756 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 12:39:44,089 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 12:39:46,998 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 12:39:50,792 - INFO - User logged in successfully
+2025-05-25 12:39:52,148 - INFO - User Logout in successfully
+2025-05-25 13:16:20,179 - ERROR - input blank username and check the error message is displayed.
+2025-05-25 13:16:24,327 - ERROR - input blank password and check the error message is displayed.
+2025-05-25 13:16:27,916 - ERROR - Enter invalid username check the error message is displayed.
+2025-05-25 13:16:36,628 - ERROR - Enter locked out username and check the error message is displayed.
+2025-05-25 13:16:42,405 - INFO - Enter invalid password and check the error message is displayed.
+2025-05-25 13:16:47,625 - ERROR - Enter invalid username and password and check the error message is displayed.
+2025-05-25 13:16:51,373 - INFO - User logged in successfully
+2025-05-25 13:16:53,447 - INFO - User Logout in successfully
