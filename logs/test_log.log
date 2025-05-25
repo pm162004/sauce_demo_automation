@@ -1019,3 +1019,9 @@ Stacktrace:
 2025-05-25 13:16:47,625 - ERROR - Enter invalid username and password and check the error message is displayed.
 2025-05-25 13:16:51,373 - INFO - User logged in successfully
 2025-05-25 13:16:53,447 - INFO - User Logout in successfully
+2025-05-25 15:36:09,535 - INFO - User logged in successfully
+2025-05-25 15:36:12,823 - INFO - User logged in successfully
+2025-05-25 15:36:16,140 - INFO - User logged in successfully
+2025-05-25 15:36:23,418 - INFO - User logged in successfully
+2025-05-25 15:36:26,307 - INFO - User logged in successfully
+2025-05-25 15:36:34,036 - INFO - User logged in successfully
