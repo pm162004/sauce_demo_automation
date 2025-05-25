@@ -109,3 +109,4 @@ class TestProductBrowsing:
             take_debug_screenshot("product_browsing_failed")
             logger.error("Product browsing failed: {}".format(e))
             raise
+        quit_browser()
