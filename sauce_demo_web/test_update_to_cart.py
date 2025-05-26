@@ -6,6 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 from sauce_demo_setup.config import config
 from constant import validation_assert
+from log_config import setup_logger
+
 import os
 import datetime
 
@@ -36,7 +38,6 @@ wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 
 user_name = config.USER_NAME
 password = config.PASSWORD
-from log_config import setup_logger
 
 
 logger = setup_logger()

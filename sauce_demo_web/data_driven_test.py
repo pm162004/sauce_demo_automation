@@ -1,4 +1,3 @@
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,7 +8,7 @@ from constant import validation_assert
 from log_config import setup_logger
 
 
-logger = setup_logger()
+
 
 # Setup driver
 chrome_options = webdriver.ChromeOptions()
@@ -19,14 +18,11 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
-# driver.implicitly_wait(10)
 wait = WebDriverWait(driver, 20)
 wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 
-# user_name = config.USER_NAME
-# password = config.PASSWORD
-
+logger = setup_logger()
 
 @pytest.mark.parametrize(
     "username,password",

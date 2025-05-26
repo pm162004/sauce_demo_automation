@@ -9,9 +9,6 @@ from log_config import setup_logger
 import os
 import datetime
 
-logger = setup_logger()
-
-# Setup driver
 
 
 chrome_options = webdriver.ChromeOptions()
@@ -34,13 +31,15 @@ chrome_options.add_argument("--headless") # Optional for headless mode
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
-# driver.implicitly_wait(10)
+
 wait = WebDriverWait(driver, 25)
 wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 
 user_name = config.USER_NAME
 password = config.PASSWORD
+
+logger = setup_logger()
 
 def save_screenshot(filename, use_timestamp=True, folder="screenshorts"):
     os.makedirs(folder, exist_ok=True)

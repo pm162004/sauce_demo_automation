@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from sauce_demo_setup.config import config
 from constant import validation_assert
+from log_config import setup_logger
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')
@@ -26,7 +27,6 @@ chrome_options.add_argument("--headless") # Optional for headless mode
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
-# driver.implicitly_wait(10)
 wait = WebDriverWait(driver, 20)
 wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "body")))
 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
@@ -34,7 +34,6 @@ wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 user_name = config.USER_NAME
 password = config.PASSWORD
 
-from log_config import setup_logger
 
 
 logger = setup_logger()
