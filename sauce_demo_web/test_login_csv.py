@@ -1,4 +1,6 @@
 
+import csv
+import os
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -13,8 +15,9 @@ logger = setup_logger()
 
 # Setup driver
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument("--headless")  # Optional for headless mode
-driver = webdriver.Chrome()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options)
+
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
@@ -27,15 +30,20 @@ wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body")))
 # password = config.PASSWORD
 
 
-import csv
-import os
 
 def get_login_data():
-    csv_path = "./user.csv"  # relative path
+    csv_path = "user.csv"  # relative path
     with open(csv_path, newline="") as file:
         return [tuple(row.values()) for row in csv.DictReader(file)]
 
-
+@pytest.fixture
+def driver():
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(options=chrome_options)
+    driver.maximize_window()
+    yield driver
+    driver.quit()
 
 @pytest.mark.parametrize("username,password", get_login_data())
 def test_login_csv(driver, username, password):

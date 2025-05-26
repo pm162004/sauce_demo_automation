@@ -13,8 +13,9 @@ logger = setup_logger()
 
 # Setup driver
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument("--headless")  # Optional for headless mode
-driver = webdriver.Chrome()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options)
+
 driver.maximize_window()
 driver.get(config.WEB_URL)
 
